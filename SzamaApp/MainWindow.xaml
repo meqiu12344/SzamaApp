@@ -1,0 +1,31 @@
+﻿<Window x:Class="SzamaApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SzamaApp"
+        mc:Ignorable="d"
+        Title="SzamaApp" Height="700" Width="400">
+    <StackPanel>
+        <Image Source="C:\Users\meqiu\source\repos\SzamaApp WPF\SzamaApp WPF\foto\ciasto.png"></Image>
+
+        <StackPanel Margin="30" Height="375">
+            <TextBlock FontSize="35" TextAlignment="Center" Margin="30" Foreground="#ffb3c6" FontFamily="Trebuchet MS" TextWrapping="Wrap" x:Name="loginInformation" RenderTransformOrigin="0.494,-0.5" Height="45" ><Bold>Zaloguj się</Bold></TextBlock>
+            <Label FontSize="20">
+                <Italic>Login:</Italic>
+            </Label>
+            <TextBox Padding="10" Margin="0,0,0,20" BorderBrush="#ffb3c6" x:Name="login"></TextBox>
+
+            <Label FontSize="20">
+                <Italic>Hasło:</Italic>
+            </Label>
+            <PasswordBox Padding="10" Margin="0,0,0,20" BorderBrush="#ffb3c6" x:Name="password"></PasswordBox>
+
+            <Button FontSize="20" Margin="0, 20, 0 20" Width="170" Padding="5" Background="#caf0f8" BorderThickness="0" Click="Button_Click">
+                <Bold>Wejdź</Bold>
+            </Button>
+        </StackPanel>
+
+
+    </StackPanel>
+</Window>
